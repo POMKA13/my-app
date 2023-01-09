@@ -1,0 +1,29 @@
+.item img {
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #6495ed;
+}
+
+.like img {
+    width: 15px;
+}
+
+.item {
+    width: 200px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: #899bbe;
+    border-radius: 15px;
+}
+
+.message {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}

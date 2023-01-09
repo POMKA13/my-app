@@ -1,0 +1,16 @@
+.content {
+    grid-area: cont;
+}
+
+.posts {
+    margin-left: 50px;
+}
+
+.title {
+    padding-left: 20px;
+}
+
+.inputText {
+    padding-left: 20px;
+    padding-bottom: 15px;
+}

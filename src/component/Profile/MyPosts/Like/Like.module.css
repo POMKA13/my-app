@@ -1,0 +1,13 @@
+.like {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.like img {
+    width: 10px;
+    margin-right: 5px;
+}
+
+.count {
+    padding-top: 5px;
+}

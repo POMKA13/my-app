@@ -1,0 +1,12 @@
+.header {
+
+    padding: 10px 0px 10px 30px;
+}
+.logo {
+    width: 150px;
+}
+.header {
+    grid-area: header;
+    background-color: #c2d0d0;
+}
+
