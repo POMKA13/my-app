@@ -17,15 +17,19 @@
 }
 
 .active {
+    display: block;
     font-size: 24px;
     font-weight: 700;
     text-decoration: none;
     padding-left: 15px;
     color: #fffffe;
+    background-color: gray;
+    border-radius: 0px 15px 15px 0px;
 }
 
 .link:hover a {
     display: block;
-    background-color: black;
+    background-color: #899BBE;
     color: white;
+    border-radius: 0px 15px 15px 0px;
 }

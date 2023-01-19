@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <navbar className={s.navbar}>
+        <nav className={s.navbar}>
             <div className={s.link}>
                 <NavLink to='/profile' className={navData => navData.isActive ? s.active : s.item}>Profile</NavLink>
             </div>
@@ -20,7 +20,7 @@ const Navbar = () => {
             <div className={s.link}>
                 <NavLink to='/settings' className={navData => navData.isActive ? s.active : s.item}>Settings</NavLink>
             </div>
-        </navbar>
+        </nav>
     )
 }
 
