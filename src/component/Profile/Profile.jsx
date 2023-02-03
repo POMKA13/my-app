@@ -10,11 +10,10 @@ const Profile = (props) => {
             <ProfileInfo/>
             <div className={s.postBox}>
                 <MyPosts postData={props.postData}
-                         dispatch={store.dispatch}
-                         // addNewPost={props.addNewPost}
-                         // newPostText={props.newPostText}
+                         addNewPost={props.addNewPost}
+                         newPostText={props.newPostText}
                          updateNewPost={props.updateNewPost}
-                         // dateOf={props.dateOf}
+                         dateOf={props.dateOf}
                 />
             </div>
         </section>

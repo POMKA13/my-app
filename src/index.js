@@ -11,7 +11,11 @@ let rerender = (state) => {
     root.render(
         <React.StrictMode>
             <App state={state}
-                 dispatch={store.dispatch.bind(store)}/>
+                 addNewPost={store.addNewPost.bind(store)}
+                 updateNewPost={store.updateNewPost.bind(store)}
+                 addNewMessage={store.addNewMessage.bind(store)}
+                 updateNewMessage={store.updateNewMessage.bind(store)}
+            />
         </React.StrictMode>
     );
     reportWebVitals();
