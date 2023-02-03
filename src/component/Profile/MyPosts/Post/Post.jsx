@@ -3,6 +3,7 @@ import s from './Post.module.css'
 import Like from "../Like/Like";
 
 const Post = (props) => {
+
     return (
         <div className={s.item}>
             <div className={s.content}>
@@ -12,7 +13,7 @@ const Post = (props) => {
                     {props.message}
                 </div>
             </div>
-            <Like count='10'/>
+            <Like count='10' dateOf={props.dateOf}/>
         </div>
     )
 }

@@ -23,7 +23,7 @@
     text-decoration: none;
     padding-left: 15px;
     color: #fffffe;
-    background-color: gray;
+    background-color: #899BBE;
     border-radius: 0px 15px 15px 0px;
 }
 
@@ -32,4 +32,8 @@
     background-color: #899BBE;
     color: white;
     border-radius: 0px 15px 15px 0px;
+}
+
+.link a {
+
 }

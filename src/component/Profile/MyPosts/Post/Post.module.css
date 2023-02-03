@@ -9,18 +9,19 @@
 }
 
 .item {
-    width: 200px;
+    max-width: 400px;
     margin-bottom: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
+    padding: 10px 10px 10px 10px;
     background-color: #899bbe;
     border-radius: 15px;
+    display: inline-block;
 }
 
 .message {
     padding-left: 10px;
     padding-top: 10px;
     font-size: 18px;
+    color: #ffffff;
 }
 
 .content {

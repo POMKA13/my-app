@@ -2,12 +2,71 @@
     grid-area: cont;
 }
 
+textarea {
+    width: 400px;
+    height: 70px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #899BBE;
+
+    resize: none;
+    padding: 10px;
+}
+
+textarea:focus-visible {
+    box-shadow: 0 0 5px 5px #C2D0D0;
+}
+
+button {
+    border: 1px solid #899BBE;
+    padding: 0 20px;
+    margin: 0 15px 15px 0;
+    outline: none;
+    border-radius: 6px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #385898;
+    background-color: #e7f3ff;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+}
+
+button:focus-visible {
+    box-shadow: 0 0 0 2px #666;
+}
+
+button:hover {
+    background-color: #DBE7F2;
+}
+button:active {
+    transform: scale(0.96);
+}
+button:disabled {
+    pointer-events: none;
+    opacity: 0.65;
+}
+
+
 .posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     margin-left: 50px;
 }
 
 .title {
     padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #385898;
 }
 
 .inputText {

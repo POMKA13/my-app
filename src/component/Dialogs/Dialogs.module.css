@@ -12,11 +12,10 @@
 .dialog {
     padding: 10px;
     text-decoration: none;
+
 }
 
 .messages {
-    /*display: flex;*/
-    /*flex-direction: column;*/
     padding: 20px;
 }
 
@@ -25,11 +24,12 @@
     padding: 10px;
     display: inline-block;
     margin-bottom: 20px;
-    text-align: right;
-    color: black;
+    text-align: left;
+    color: #fffffe;
     background-color: #899BBE;
     border-radius: 15px 15px 0px 15px;
     box-shadow: 3px 1px 5px 1px gray;
+    margin-left: auto;
 }
 
 .active {
@@ -39,24 +39,34 @@
 .item {
     font-size: 18px;
     font-weight: 400;
-    color: black;
+    color: #385898;
+    font-weight: 600;
     text-decoration: none;
 }
 
 .time {
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 10px;
     text-align: right;
-    color: gray;
+    color: #fffffe;
 }
 
 .newMessage {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    gap: 10px;
 
 }
 
 .box {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    min-width: 150px;
+    /*max-width: 400px;*/
+
+}
+
+button {
+    width: 150px;
 }

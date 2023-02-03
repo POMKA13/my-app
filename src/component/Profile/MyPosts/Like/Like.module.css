@@ -1,13 +1,26 @@
 .like {
-    display: grid;
-    grid-template-columns: 2fr 10fr;
+    display: flex;
+    width: 50px;
+    margin-top: 10px;
+}
+
+.like a img {
+
 }
 
 .like img {
-    width: 10px;
+    width: 20px;
     margin-right: 5px;
 }
 
 .count {
+    font-size: 12px;
+    text-align: center;
     padding-top: 5px;
+    color: #fffffe;
+}
+
+.likeBox {
+    display: flex;
+    justify-content: space-between;
 }
