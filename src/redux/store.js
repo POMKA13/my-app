@@ -36,7 +36,7 @@ let store = {
 
     dispatch (action) {
         debugger
-        if (action.type === 'ADD-NEW-POST') {
+        if (action.type === ADD_NEW_POST) {
             let newPost = {
                 id: 3,
                 message: this._state.profilePage.newPostText,
@@ -83,5 +83,21 @@ export const updateNewPostActionCreator = (text) => {
     )
 }
 
-window.store = store
+export const addNewMessageActionCreator = () => {
+    return (
+        {
+            type: ADD_NEW_MESSAGE
+        }
+    )
+}
+
+export const updateNewMessageActionCreator = (text) => {
+    return (
+        {
+            type: UPDATE_NEW_MESSAGE,
+            updateText: text
+        }
+    )
+}
+
 export default store
