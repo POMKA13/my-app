@@ -2,10 +2,10 @@ import React from "react";
 import s from './Dialogs.module.css'
 import DialogItem from "./DialogsItem/DialogItem";
 import Message from "./Message/Message";
-import {addNewMessage, updateNewMessage} from "../../redux/store";
+import {addNewMessageActionCreator, updateNewMessageActionCreator} from "../../redux/store";
 
 const Dialogs = (props) => {
-    debugger
+
     let dialogsElement = props.dialogsData.map(dialog => <DialogItem userName={dialog.userName} id={dialog.id}/>)
 
     let messagesElement = props.messageData.map(message => <Message message={message.message} time={message.time}/>)
@@ -13,12 +13,12 @@ const Dialogs = (props) => {
     let newMessageElement = React.createRef()
 
     let addMessage = () => {
-        props.addNewMessage()
+        props.dispatch(addNewMessageActionCreator())
     }
 
     let onMessageChange = () => {
         let text = newMessageElement.current.value
-        props.updateNewMessage(text)
+        props.dispatch(updateNewMessageActionCreator(text))
     }
 
     return (
