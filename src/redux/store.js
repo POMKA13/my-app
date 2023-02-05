@@ -34,8 +34,9 @@ let store = {
         return today.toLocaleString()
     },
 
-    dispatch(action) {
-        if (action.type === ADD_NEW_POST) {
+    dispatch (action) {
+        debugger
+        if (action.type === 'ADD-NEW-POST') {
             let newPost = {
                 id: 3,
                 message: this._state.profilePage.newPostText,
