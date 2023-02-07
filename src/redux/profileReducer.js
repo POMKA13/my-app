@@ -1,13 +1,13 @@
 const ADD_NEW_POST = 'ADD-NEW-POST'
 const UPDATE_NEW_POST = 'UPDATE-NEW-POST'
 
-const profileReducer = (state, action) => {
+const profileReducer = (state, dateOf, action) => {
     switch (action.type) {
         case ADD_NEW_POST:
             let newPost = {
                 id: 3,
                 message: state.newPostText,
-                dateOf: state.dateOf()
+                dateOf: dateOf()
             }
             state.postData.push(newPost)
             state.newPostText = ''
@@ -17,7 +17,6 @@ const profileReducer = (state, action) => {
             return state
     }
     return state
-
 }
 
 export default profileReducer

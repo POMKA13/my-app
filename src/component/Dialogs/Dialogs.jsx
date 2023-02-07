@@ -5,7 +5,7 @@ import Message from "./Message/Message";
 import {addNewMessageActionCreator, updateNewMessageActionCreator} from "../../redux/store";
 
 const Dialogs = (props) => {
-    debugger
+
     let dialogsElement = props.dialogsData.map(dialog => <DialogItem userName={dialog.userName} id={dialog.id}/>)
 
     let messagesElement = props.messageData.map(message => <Message message={message.message} time={message.time}/>)
