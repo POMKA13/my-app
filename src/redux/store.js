@@ -1,3 +1,7 @@
+import profileReducer from "./profileReducer";
+import dialogsReducer from "./dialogsReducer";
+
+
 const ADD_NEW_POST = 'ADD-NEW-POST'
 const UPDATE_NEW_POST = 'UPDATE-NEW-POST'
 const ADD_NEW_MESSAGE = 'ADD-NEW-MESSAGE'
@@ -33,37 +37,12 @@ let store = {
         let today = new Date()
         return today.toLocaleString()
     },
-
     dispatch (action) {
-        debugger
-        if (action.type === ADD_NEW_POST) {
-            let newPost = {
-                id: 3,
-                message: this._state.profilePage.newPostText,
-                dateOf: this.dateOf()
-            }
-            this._state.profilePage.postData.push(newPost)
-            this._state.profilePage.newPostText = ''
-            this._callSubscriber(this._state)
-        }
-        if (action.type === UPDATE_NEW_POST) {
-            this._state.profilePage.newPostText = action.updateText
-            this._callSubscriber(this._state)
-        }
-        if (action.type === ADD_NEW_MESSAGE) {
-            let newMessage = {
-                id: 1,
-                message: this._state.dialogsPage.newMessageText,
-                time: this.dateOf()
-            }
-            this._state.dialogsPage.messageData.push(newMessage)
-            this._state.dialogsPage.newMessageText = ''
-            this._callSubscriber(this._state)
-        }
-        if (action.type === UPDATE_NEW_MESSAGE) {
-            this._state.dialogsPage.newMessageText = action.updateText
-            this._callSubscriber(this._state)
-        }
+
+        let profileReducer = profileReducer(this._state.profilePage, action)
+        let dialogsReducer = dialogsReducer(this._state.dialogsPage, action)
+
+        this._callSubscriber(this._state)
     }
 }
 
