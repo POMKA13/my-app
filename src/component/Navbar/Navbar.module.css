@@ -1,7 +1,10 @@
 .navbar {
     grid-area: nav;
-    background-color: #C2D0D0;
+    background-color: #F0F2F5;
     padding-top: 10px;
+    padding-right: 10px;
+    height: 100%;
+    border-radius: 7px;
 }
 
 .navbar div {
@@ -23,7 +26,7 @@
     text-decoration: none;
     padding-left: 15px;
     color: #fffffe;
-    background-color: #899BBE;
+    background-color: #1877F2;
     border-radius: 0px 15px 15px 0px;
 }
 
@@ -35,5 +38,13 @@
 }
 
 .link a {
-
+    display: block;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.icon {
+    width: 17px;
+    height: 17px;
+    color: #808080;
 }

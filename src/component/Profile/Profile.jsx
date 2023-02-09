@@ -2,13 +2,13 @@ import React from "react";
 import MyPosts from "./MyPosts/MyPosts";
 import ProfileInfo from "./PrrofileInfo/ProfileInfo";
 import s from '../Profile/Profile.module.css'
-import store from "../../redux/store";
+
 
 const Profile = (props) => {
     return (
         <section>
             <ProfileInfo/>
-            <div className={s.postBox}>
+            <div>
                 <MyPosts postData={props.postData}
                          dispatch={props.dispatch}
                          newPostText={props.newPostText}

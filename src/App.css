@@ -27,10 +27,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     grid-template-columns: 2fr 10fr;
     grid-gap: 2px;
     width: 1200px;
+    height: 100vh;
     margin: 0px auto;
+
 }
 
 .app-wrapper-content {
     grid-area: cont;
-    background-color: #e9ecec;
+    background-color: #F0F2F5;
+    border-radius: 7px;
 }

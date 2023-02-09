@@ -1,12 +1,97 @@
 .header {
-
-    padding: 10px 0px 10px 30px;
-}
-.logo {
-    width: 150px;
-}
-.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     grid-area: header;
-    background-color: #c2d0d0;
+    background-color: #1877F2;
+    border-radius: 7px;
 }
 
+.logo {
+    padding-left: 15px;
+    font-weight: 600;
+    font-size: 42px;
+    color: #ffffff;
+}
+
+.form {
+    position: relative;
+}
+
+.form input {
+    border-radius: 10px;
+    padding-left: 27px;
+    width: 150px;
+    background-color: #F0F2F5;
+    width: 285px;
+    height: 30px;
+}
+
+.form input:hover {
+    background-color: #e5e3e3;
+}
+
+.search {
+    margin-right: 50px;
+}
+
+.search button {
+
+}
+.btn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 30px;
+    height: 18px;
+    border: none;
+    background: #7BA7AB;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.btn:before {
+   content: "";
+   font-size: 16px;
+    color: #F9F0DA;
+
+}
+
+.circle {
+    border: 1px solid #747373;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 6px;
+    top: 4px;
+}
+
+.hyphen {
+    border-left: 1px solid #747373;
+    position: absolute;
+    height: 4px;
+    width: 3px;
+    transform: rotate(-45deg);
+    top: 11px;
+    left: 15px;
+}
+
+.searchContainer {
+    position: absolute;
+    top: 6px;
+    left: 3px;
+}
+
+.box {
+    margin-right: 15px;
+}
+
+.box ul {
+    display: flex;
+    column-gap: 10px;
+}
+
+.boxLick a img {
+    height: 24px;
+}

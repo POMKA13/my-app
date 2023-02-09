@@ -18,7 +18,7 @@ textarea:focus-visible {
     box-shadow: 0 0 5px 5px #C2D0D0;
 }
 
-button {
+.buttonPost {
     border: 1px solid #899BBE;
     padding: 0 20px;
     margin: 0 15px 15px 0;
@@ -31,23 +31,22 @@ button {
     text-decoration: none;
     color: #385898;
     background-color: #e7f3ff;
-    cursor: pointer;
     user-select: none;
     appearance: none;
     touch-action: manipulation;
 }
 
-button:focus-visible {
+.buttonPost:focus-visible {
     box-shadow: 0 0 0 2px #666;
 }
 
-button:hover {
+.buttonPost:hover {
     background-color: #DBE7F2;
 }
-button:active {
+.buttonPost:active {
     transform: scale(0.96);
 }
-button:disabled {
+.buttonPost:disabled {
     pointer-events: none;
     opacity: 0.65;
 }
